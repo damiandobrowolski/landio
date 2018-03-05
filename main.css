@@ -8,8 +8,14 @@
     outline: 0;
 
     box-sizing: border-box;
-    -ms-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	
+	@include mQ(1000px){
+		color: red;
+	}
 }
+
+
 
 body{
 	font-family: 'Raleway', sans-serif;
@@ -19,7 +25,7 @@ body{
 }
 
 .container{
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -254,11 +260,12 @@ ul, .search-button{
 .advantages-of-landio{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .advantages-row{
 	text-align: center;
-	width: 30%;
+	width: 340px;
 	margin-top: 120px;
 }
 
@@ -364,10 +371,11 @@ h4 + p + p{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .sub-row{
-	width: 33%;
+	width: 392px;
 	height: 550px;
 	border:2px solid #6C59B4;
 	border-radius: 5px;
@@ -776,9 +784,6 @@ h4 + p + p{
 
 
 
-
-
-
 /*----------------------MEDIA QUERY-------------------*/
 @media (min-width: 1600px){
 	.container{
@@ -813,5 +818,18 @@ h4 + p + p{
 
 	.profile-button{
 		width: 80px;
+	}
+}
+
+
+@media (max-width: 1025px) {
+	.advantages-of-landio{
+		justify-content: center;
+	}
+}
+
+@media (max-width: 500px){
+	.featured-article-wrapper{
+		margin: 75px auto;
 	}
 }
