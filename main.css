@@ -43,13 +43,12 @@ body{
 
 /*--------------MAIN PAGE----------------------*/
 .main-page{
-	height: 100vh;
+	height: 935px;
 	width: 100%;
 	background-image: url(img/bg-header.jpg);
-	background-size: 100vw 100vh;
+	background-size: 100vw 100%;
 	background-repeat: no-repeat;
 	color: white;
-	/*z-index: 1;*/
 }
 
 .padding-top-15px{
@@ -253,7 +252,7 @@ ul, .search-button{
 
 .build-with-landio img{
 	margin: 0 auto;
-	width: 1099px;
+	width: 100%;
 	display: block;
 }
 
