@@ -21,29 +21,33 @@
 						<li class="floatLeft"><a href="#">Ul Kit </a></li>
 						<li class="floatLeft"><a href="#">GitHub </a></li>
 					</ul>
+					<div class="hamburger" id="hamburger">
+						<div class="first-line"></div>
+						<div class="second-line"></div>
+						<div class="third-line"></div>
+					</div>
 					<div class="menu-grey-point floatLeft"></div>
 					<button class="floatLeft search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
 					<div class="profile-button floatLeft" id="popUpBttn" onclick="clickToShowProfile()">
 						<img src="img/face5.jpg" alt="" class="floatLeft">
 						<i class="fa fa-angle-down floatLeft" aria-hidden="true"></i>
+						<div class="pop-up-profile" id="popUpProfile">
+							<img src="img/face5.jpg" alt="" class="floatLeft">
+							<div class="floatLeft name-mail">
+								<p>Joel Fisher</p>
+								<p>mail@gmail.com</p>	
+							</div>
+							<div class="clear"></div>
+							<div class="profile-line"></div>
+							<p>View Posts</p>
+							<p>Manage Groups</p>
+							<p>Subscribction & Billing</p>
+							<p>LOG OUT</p>
+						</div>
 					</div>
 				</div>
 				
 				<div class="clear"></div>
-
-				<div class="pop-up-profile" id="popUpProfile">
-					<img src="img/face5.jpg" alt="" class="floatLeft">
-					<div class="floatLeft name-mail">
-						<p>Joel Fisher</p>
-						<p>mail@gmail.com</p>	
-					</div>
-					<div class="clear"></div>
-					<div class="profile-line"></div>
-					<p>View Posts</p>
-					<p>Manage Groups</p>
-					<p>Subscribction & Billing</p>
-					<p>LOG OUT</p>
-				</div>
 			</nav>
 			
 			<div class="slider-main-menu">
@@ -320,6 +324,7 @@
 		</div>
 	</footer>
 
+	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>

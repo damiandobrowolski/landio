@@ -14,3 +14,14 @@
 			// }
 		}
 		// document.body.addEventListener('click', clickToShowProfile(), true); 
+
+		var hamburger = $('.hamburger');
+		
+		$(document).ready(function(){
+			$('.hamburger').click(function(){
+				// $(this).addClass('cross');
+				$(this).toggleClass('cross');
+				$('.menu-mobile').toggleClass('none');
+			})
+		
+		})
