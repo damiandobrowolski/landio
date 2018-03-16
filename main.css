@@ -55,6 +55,10 @@ body{
 	padding-top: 50px;
 }
 
+.logo-nav{
+    margin-top: 5px;
+}
+
 ul li a, button > i{
 	color: white;
 }
@@ -104,6 +108,7 @@ ul, .search-button{
 
 .profile-button{
 	cursor: pointer;
+    position: relative;
 }
 
 .search-button:hover i{
@@ -602,13 +607,18 @@ h4 + p + p{
 	padding-bottom: 60px;
 }
 
+.sign-up-form{
+    text-align: center;
+}
+
 .input-text-flex{
 	display: flex;
 	justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .input-icon-wrapper, .sign-up button{
-	width: 22%;
+	width: 264px;
 }
 
 .input-icon-wrapper{
@@ -728,8 +738,8 @@ h4 + p + p{
 	background-color: white;
 	color: black;
 	position: absolute;
-	right: 136px;
-	top: 116px;
+	right: 0px;
+	top: 57px;
 	padding-top: 15px;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -866,6 +876,15 @@ h4 + p + p{
 	}
 }
 
+@media (max-width: 1073px){
+    .input-text-flex{
+        justify-content: center;
+    }
+    .sign-up-button{
+        height: 60px;
+    }
+}
+
 
 @media (max-width: 1025px) {
 	.advantages-of-landio{
@@ -875,50 +894,25 @@ h4 + p + p{
 
 @media (max-width: 500px){
 	.featured-article-wrapper{
-		margin: 75px auto;
+		margin: 48px auto;
 	}
 	.hamburger{
 		display: block;
 	}
 	.menu,
 	.menu-grey-point,
-	.search-button,
-	.profile-button{
+	.search-button{
 		display: none;
 	}
+    .profile-button{
+        top: 9px;
+        right: 18px;
+	}
+	
+	.featured-article p{
+		line-height: 25px;
+	}
+    
 }
 
-
-/* ----------------HAMBURGER------------------ */
-/* .hamburger{
-    @include mQ(500px){
-        margin-top: 15px;
-        margin-right: 15px;
-        float: right;
-        cursor: pointer;
-        position: relative;
-        z-index: 1000;
-        div
-        {
-            width: 35px;
-            height: 3px;
-            background-color: $white;
-        }
-        .first-line,
-        .second-line,
-        .third-line{
-            position: relative;
-            transition: 0.3s linear;
-        }
-        .second-line{
-            top: 13px;
-        }
-        .third-line{
-            top: 26px;
-        }
-    }
-    &~div{
-        clear: both;
-    } 
-} */
 

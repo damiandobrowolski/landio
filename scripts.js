@@ -8,15 +8,10 @@
 			else{
 				click.style.display = "none";
 			}
-
-			// if(bodyClick){
-			// 	click.style.display = "none";
-			// }
 		}
-		// document.body.addEventListener('click', clickToShowProfile(), true); 
+		 
 
-		var hamburger = $('.hamburger');
-		
+//HAMBURGER MENU		
 		$(document).ready(function(){
 			$('.hamburger').click(function(){
 				// $(this).addClass('cross');
@@ -25,3 +20,4 @@
 			})
 		
 		})
+
